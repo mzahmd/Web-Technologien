@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/javascript/script.js" defer></script>
+    <title>To Do</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>ToDo</h1>
+            <form action="/create" method="post" id="form-header">
+                <input type="text" class="input" id="todoInput" name="todo" placeholder="Write your todo">
+                <button type="submit" class="btn" id="create">Erstellen</button>
+            </form>
+        </header>
+
+        <main>
+            <div class="tasks-main"></div>
+        </main>
+
+    </div>
+</body>
+
+</html>

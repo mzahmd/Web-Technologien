@@ -1,0 +1,41 @@
+.container {
+    text-align: center;
+}
+
+.input {
+    padding: 0.5rem;
+}
+
+.btn {
+    padding: 0.5rem;
+    background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.deleteButton,
+.updateButton {
+    border: 2px solid black;
+    color: black;
+    margin-left: 1rem;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.tasks-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.task-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
