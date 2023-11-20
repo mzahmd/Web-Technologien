@@ -195,30 +195,6 @@ const schema = new GraphQLSchema({
 
 app.use("/graphql", graphqlHTTP({ graphiql: true, schema: schema }));
 
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "/views/index.html"));
-});
-
-app.post("/create", async function (req, res) {
-  const newTodo = req.body.todo;
-  const myTodo = new Todo({ name: newTodo });
-  await myTodo.save();
-  res.json({ todo: myTodo });
-});
-
-app.post("/update", async function (req, res) {
-  const newTodo = req.body.newTodo;
-  const id = req.body.dataId;
-  await Todo.updateOne({ createdAt: id }, { name: newTodo });
-  res.redirect("/");
-});
-
-app.delete("/delete", async function (req, res) {
-  const id = req.body.dataId;
-  await Todo.deleteOne({ createdAt: id });
-  res.json({ delete: "SUCCESS" });
-});
-
 app.listen(8080, () => {
   console.log("listening on Port 8080");
 });
