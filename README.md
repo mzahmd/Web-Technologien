@@ -1,2 +1,2 @@
 # Web-Technologien
-# cd Teilaufgabe02
+cd Teilaufgabe02
