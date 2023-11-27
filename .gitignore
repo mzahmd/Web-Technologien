@@ -1,4 +1,3 @@
-/Teilaufgabe01
-/Teilaufgabe03/
-/Teilaufgabe02/node_modules
-/Teilaufgabe02/*.pdf
+Teilaufgabe01
+node_modules
+*.pdf
